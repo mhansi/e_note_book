@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Note Book</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <h2>E-Note Book</h2>
+            <button id="btnAddProject">Add Project</button>
+            <div id="projects">
+                <ul id="main">
+                    <li><a href="#personal">Personal</a></li>
+                    <li><a href="#work">Work</a></li>
+
+                </ul>
+                <ol id="personal">
+                    <li><input type='checkbox'>Doctor Appoinment</li>
+                    <li><input type='checkbox'>Call the plumper</li>
+
+                </ol>
+                <ol id="work">
+                        <li><input type='checkbox'>complete test case document</li>
+                        <li><input type='checkbox'>Meet the manager</li>
+    
+                    </ol>
+            </div>
+            <button id="btnAddTask">Add Task</button>
+
+            <div id="project-dialog" title="Add a project" style="display:none">
+                <label for="new-project">Project name: </label><input id="new-project" type="text">
+            </div>
+            <div id="task-dialog" title="Add a task" style="display:none">
+                <label for="new-task">Task name: </label><input id="new-task" type="text">
+            </div>
+        </div>
+
+        <script src="jquery.min.js" ></script>
+        <script src="jqueryui/jquery-ui.js" ></script>
+        <script src="script.js" ></script>
+        
+    </body>
+</html>
